@@ -13,7 +13,7 @@ basic.forever(() => {
             . # # . .
             . . # . .
             `)
-        basic.pause(250)
+        basic.pause(125)
         radio.sendString("stop")
     } else if (input.buttonIsPressed(Button.B)) {
         radio.sendString("right")
@@ -24,7 +24,7 @@ basic.forever(() => {
             . . # # .
             . . # . .
             `)
-        basic.pause(250)
+        basic.pause(125)
         radio.sendString("stop")
     } else if (input.acceleration(Dimension.Y) <= -544) {
         radio.sendString("forward")
